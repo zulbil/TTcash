@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TT Cash Game</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row justify-content-around" style="align-items: center;">
+			<img class="img-responsive" src="images/tt-logo.png" alt="Logo">
+
+			<h1><span class="montant">4000</span> <span>DT</span></h1>
+		</div>
+		<div class="row mt-5">
+			<div class="col-lg-6">
+				
+				<div class="card mb-4">
+					<div class="card-header">
+						<h4>Bienvenu sur TT Cash</h4>
+					</div>
+					<div class="card-body">
+						<p>
+							Le principe du jeu est simple. Le but de ce jeu est de trouver le numéro sécret Tunisie Telecom. Tout au long du jeu vous avez droit à 8 tentatives et à une somme d'argent qui diminue au fur et à mesure que le temps s'écoule. Lorsque vous tapez un numéro vous trouverez des différentes couleurs sur les cases selon des cas bien différents 
+						</p>
+						<ul>
+							Les différentes couleurs sont :
+							<li>
+								<strong style="color: #ffc107; ">Le jaune</strong>: indique que le chiffre que vous avez fourni existe dans le numéro secret mais n'est pas à la bonne position.
+							</li>
+							<li>
+								<strong style="color: #adb5bd9c;">Le gris</strong>:  indique que le chiffre que vous avez fourni n'existe pas dans le numéro secret.
+							</li>
+							<li>
+								<strong style="color: #00beff;">Le bleu</strong>: indique que le chiffre que vous avez fourni existe dans le numéro secret et se trouve à la bonne position.
+							</li>
+						</ul>
+					
+					</div>
+				</div>
+				<button class="btn btn-primary btn-lg btn-start">Commencer le jeu</button>
+			</div>
+			<div class="col-lg-6 row justify-content-center">
+				<form class="form-number mb-4 col-10" action="">
+					<input type="text" class="form-control" placeholder="Entrez votre numéro" disabled="true">
+					<span class="invalid-feedback"> Veuiler remplir le champ par un numéro valide</span>
+				</form>
+				<table class="output mb-4">
+					<tr class="0" id="0">
+						<td>
+							<div class="circle">9</div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle">TT</div>
+						</td>
+					</tr>
+					<tr class="1" id="1">
+						<td>
+							<div class="circle">9</div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle">TT</div>
+						</td>
+					</tr>
+					<tr class="2" id="2">
+						<td>
+							<div class="circle">9</div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle">TT</div>
+						</td>
+					</tr>
+					<tr class="3" id="3">
+						<td>
+							<div class="circle">9</div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle">TT</div>
+						</td>
+					</tr>
+					<tr class="4" id="4">
+						<td>
+							<div class="circle">9</div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle">TT</div>
+						</td>
+					</tr>
+					<tr class="5" id="5">
+						<td>
+							<div class="circle">9</div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle">TT</div>
+						</td>
+					</tr>
+					<tr class="6" id="6">
+						<td>
+							<div class="circle">9</div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle">TT</div>
+						</td>
+					</tr>
+					<tr class="7" id="7">
+						<td>
+							<div class="circle">9</div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle"></div>
+						</td>
+						<td>
+							<div class="circle">TT</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="stop-game hidden">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="card card-loose">
+					<div class="card-header">
+						<h5 class="text-danger h4">Vous avez perdu</h5>
+					</div>
+					<div class="card-body">
+						<p>La partie est terminée! Vous n'avez pas pu trouver le numéro secret.</p>
+						<p>Le numéro secret à trouver était :  <strong class="secret-number">9876543</strong></p>
+						<button class="btn btn-danger btn-replay">Rejouer une autre partie</button>
+						<button class="btn btn-secondary btn-quit">Quitter la partie</button>
+					</div>
+				</div>
+				<div class="card card-success">
+					<div class="card-header">
+						<h5 class="text-sucess h4">Vous avez gagnez</h5>
+					</div>
+					<div class="card-body">
+						<p>Vous avez trouvé le bon numéro </p>
+						<p>Vous pouvez repartir avec un montant de :  <strong class="gain">2000 DT</strong></p>
+						<button class="btn btn-success btn-replay">Rejouer une autre partie</button>
+						<button class="btn btn-secondary btn-quit">Quitter la partie</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.js"></script>
+</body>
+</html>

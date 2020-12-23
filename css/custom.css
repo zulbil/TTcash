@@ -1,0 +1,56 @@
+html,body {
+	text-rendering: optimizeLegibility;
+	font-size: 16px;
+	line-height: 1.2;
+	scroll-behavior: smooth;
+	position: relative; 
+}
+.img-responsive {
+	width: 150px;
+}
+.circle, .grey {
+	font-size: 1.6em; 
+	font-weight: 700;
+	letter-spacing: 1px;
+	width: 50px; 
+	height: 50px;
+	border-radius: 50%; 
+	text-align: center;
+	background-color: #adb5bd9c; 
+	vertical-align: middle; 
+	padding: 5px 0; 
+}
+
+tr>td:first-child div, tr>td:last-child div, .blue {
+	background-color: #00beff;
+}
+.btn-start, .btn-start:hover {
+	background-color: #00beff;
+	border-color: #00beff; 
+}
+.hidden { display: none !important;  }
+.yellow {
+	background-color: #ffc107;
+}
+.stop-game {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%; 
+	z-index: 10; 
+	background: rgba(0,0,0,0.15);
+}
+.card-loose, .card-success { 
+	top: -230px; 
+	display: none; 
+	transition: top 1s ease-in; 
+}
+.card-show { 
+	top: 60px !important;  
+	display: block !important; 
+}
+
+h1 {
+	font-size: 3rem;
+    color: #00beff;
+}
