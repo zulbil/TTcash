@@ -14,13 +14,13 @@ const stop  		= 	document.querySelector('.stop-game'),
 	quit_success 	=	document.querySelector('.card-success .btn-quit'); 
 
 //Compteur
-let begin = false; 
-let compteur = 0; 
-let montant = 4000; 
-let stopCompteur = false; 
+let begin 			= 	false; 
+let compteur 		= 	0; 
+let montant 		= 	4000; 
+let stopCompteur 	= 	false; 
 
 //Number to guess
-const reference = "9"+Math.floor(Math.random()*(999999-100000+1)+100000); 
+const reference 	= 	"9"+Math.floor(Math.random()*(999999-100000+1)+100000); 
 
 //Load all events
 loadEvents(); 
@@ -40,9 +40,7 @@ function refresh(e) {
 }
 
 function startGame(event) {
-	//let montant = 4000;
 	begin = true; 
-
 	input.removeAttribute('disabled');
 	const montantToShow 	= 	document.querySelector('.montant');
 	const timerMontant 		= 	setInterval(function () {  
@@ -52,7 +50,6 @@ function startGame(event) {
 		montant = montant - 50; 
 
 		if (montant == 0 ) {
-
 			setTimeout(function () { 
 				clearInterval(timerMontant);
 				showResult(false); 
@@ -67,8 +64,7 @@ function startGame(event) {
 }
 
 function showMontant(num) {
-	const montant = document.querySelector('.montant');
-	montant.textContent = num;
+	document.querySelector('.montant').textContent = num;
 	gain.textContent = num+" DT"; 
 	stopCompteur = true; 
 } 
@@ -102,14 +98,10 @@ function addNumber(e) {
 
 		// If we found all the number then we alert
 		if (checkOccurence("blue", occurence) == occurence.length ) {
-			// alert('Vous avez trouvé le numéro exact');
-			// return; 
 			showMontant(montant);
 			showResult(); 
 		}
 	} else {
-		// alert('Vous avez atteint le maximum de tentatives'); 
-		// window.location.reload(); 
 		const tel =  checkNumber(input.value); 
 
 		updateDom(tel); 
@@ -143,14 +135,7 @@ function updateDom(tel) {
 
 function checkValidity(num) {
 	const regex = /^9(\d){6}$/gm;
-	
-	const matching = num.match(regex);
-	
-	if (matching) {
-		return true;
-	} else {
-		return false; 
-	}
+	return num.match(regex);
 }
 
 // This function compare the number with the guess number
